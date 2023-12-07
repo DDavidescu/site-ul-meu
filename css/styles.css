@@ -1,0 +1,344 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.flex-box-container > * { 
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 30px;
+    margin-top: 0;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.nav-bar-links {
+    display: block;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lora', serif;
+    font-family: 'Noto Sans Glagolitic', sans-serif;
+    
+}
+
+.nav-bar-button { 
+    background-color: #1dbab4;
+    height:50px;
+    width: 200px;
+    border-width: 0px;
+    border-radius: 5%;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    color: white;
+    
+    
+}
+
+.nav-bar-item1:hover { 
+    background-color: #fc5226;
+    color: #fff;
+}
+
+.nav-bar-item2:hover {
+    background-color: #fc5226;
+    color: #fff;
+}
+
+.nav-bar-item3:hover {
+    background-color: #fc5226;
+    color: #fff;
+}
+
+.nav-bar-item4:hover {
+    background-color: #fc5226;
+    color: #fff;
+}
+
+hr { 
+    margin: 0px;
+    padding: 0px;
+    border-width: 2px;
+
+}
+
+.first-body-part {
+    height: 100vh;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding-top: 200px;
+}
+
+.introduction {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.site-description { 
+    margin-top: 15px;
+    font-family: 'Inria Serif', serif;
+}
+
+/* .introduction:hover {
+    color: #fc5226;
+} */
+
+/* .site-description:hover {
+    color:#fc5226
+} */
+
+.gradient-background {
+    background: linear-gradient(300deg,  #1561ad, #1c77ac, #1dbab4, #fc5226);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .gradient-background2 {
+    background: linear-gradient(300deg, #fc5226, #1dbab4, #1c77ac, #1561ad);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .poza-cu-mine {
+    border-radius: 50%;
+    width: 300px;
+  }
+
+  /* BUTON SCROLL */
+  
+  .div-buton-redirect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .link-buton { 
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 30px;
+    }
+
+  .buton-redirect {  
+    height: 50px;
+    width: 100px;
+    border-width: 0px;
+    border-radius: 12%;
+    cursor: pointer;
+    margin-top: 50px;
+    transition-duration: 0.4s;  
+  }
+ 
+  .link-buton:hover {
+    color: black;
+  }
+
+  .gradient-background1 {
+    background: linear-gradient(300deg,  #fc5226, #fc5227, #ba1215);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .divider {
+    border-bottom: 2.6px solid #fc5226;
+    margin: 0;
+    width: 100%;
+  }
+
+  #studii-section {
+    height: 150vh;
+    width: 100%;
+  }
+
+  #studii-header {  
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 0px;
+    font-size: 60px;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lora', serif;
+    font-family: 'Noto Sans Glagolitic', sans-serif;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 390px;
+    gap: 20px;
+    width: 1100px;
+  }
+
+  @media (min-width: 100px) and (max-width: 700px) {
+    .grid-container { 
+      text-align: center;
+    } 
+
+    #studii-header {
+      font-size: 40px;
+      padding-bottom: 20px;
+      padding-top: 60px;
+    }
+
+    .introduction {
+      font-size: 35px;
+    }
+   
+    .site-description {
+      font-size: 25px;
+    }
+
+    #studii-section {
+      height: 130vh;
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 600px) {
+    #studii-section {
+      height: 150vh;
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 500px) {
+    #studii-section {
+      height: 170vh;
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 400px) {
+    #studii-section {
+      height: 180vh;
+    }
+  }
+
+
+
+  .grid-container > * { 
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 3%;
+
+    
+  }
+
+  div > h3 { 
+    font-size: 25px;   
+    font-weight: 800;
+    margin-bottom: 0px;
+    font-family: 'Inria Serif', serif;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-right: 20px;
+  }
+
+  .grid-container > *:hover { 
+    background: linear-gradient(300deg,  #fc5226, #fc5227, #ba1215);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: white;
+    cursor: pointer;
+    border: 4px solid black;
+  }
+
+  .flex-box-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid-container > a {
+    text-decoration: none;
+  }
+
+  .profil { 
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .perioada {
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  .icon { 
+    position: sticky;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 699px) { 
+    .icon { 
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  .footer {
+    text-align: center;
+    color: grey;
+    width: 100%;
+  }
+ 
+  .first-body-part {
+    width: 100%;
+  }
